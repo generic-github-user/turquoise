@@ -2,23 +2,23 @@
 
 ## Features
 
-- [Infix notation](https://en.wikipedia.org/wiki/Infix_notation) for a variety of [mathematical operators](https://en.wikipedia.org/wiki/mathematical_operators)
+- [Infix notation](https://en.wikipedia.org/wiki/Infix_notation) for a variety of [[mathematical operators](https://en.wikipedia.org/wiki/mathematical_operators)](https://en.wikipedia.org/wiki/mathematical_operators)
 - Shorthand functions for common operations and expressions
 - Seamless integration of calculations involving numbers, symbols, strings, booleans, lists, and more
 
 Several tools for debugging and development are also under development or planned:
 
-- [Transpiling](https://en.wikipedia.org/wiki/Transpiling) to clean [Python](https://en.wikipedia.org/wiki/Python) code
-- Interactive visualization of the [abstract syntax tree](https://en.wikipedia.org/wiki/abstract_syntax_tree) for use in debugging
+- [[Transpiling](https://en.wikipedia.org/wiki/Transpiling)](https://en.wikipedia.org/wiki/Transpiling) to clean [[Python](https://en.wikipedia.org/wiki/Python)](https://en.wikipedia.org/wiki/Python) code
+- Interactive visualization of the [[abstract syntax tree](https://en.wikipedia.org/wiki/abstract_syntax_tree)](https://en.wikipedia.org/wiki/abstract_syntax_tree) for use in debugging
 - A [linter](https://en.wikipedia.org/wiki/linter) to standardize code written in Turquoise
 - A [profiler](https://en.wikipedia.org/wiki/profiler) to analyze the performance of Turquoise programs
-- [Time complexity](https://en.wikipedia.org/wiki/Time_complexity) and [space complexity](https://en.wikipedia.org/wiki/space_complexity) analysis of algorithms
+- [[Time complexity](https://en.wikipedia.org/wiki/Time_complexity)](https://en.wikipedia.org/wiki/Time_complexity) and [[space complexity](https://en.wikipedia.org/wiki/space_complexity)](https://en.wikipedia.org/wiki/space_complexity) analysis of algorithms
 - An interactive debugger
 
 ## Design Philosophy
 
 ### Brevity
-Turquoise draws on the [object-oriented](https://en.wikipedia.org/wiki/object-oriented) principles of languages like Python and [JavaScript](https://en.wikipedia.org/wiki/JavaScript), but emphasizes concision to accelerate the development workflow.
+Turquoise draws on the [[object-oriented](https://en.wikipedia.org/wiki/object-oriented)](https://en.wikipedia.org/wiki/object-oriented) principles of languages like [[Python](https://en.wikipedia.org/wiki/Python)](https://en.wikipedia.org/wiki/Python) and [[JavaScript](https://en.wikipedia.org/wiki/JavaScript)](https://en.wikipedia.org/wiki/JavaScript), but emphasizes concision to accelerate the development workflow.
 
 ### Flexibility
 Turquoise's data structures and operators are structured to be infinitely reconfigurable to the needs of your task.
@@ -27,7 +27,7 @@ Turquoise's data structures and operators are structured to be infinitely reconf
 A core part of Turquoise's design philosophy revolves around making the planning -> development -> feedback loop as seamless and pain-free as possible. The language is dynamic and meant to be interacted with as a key part of the development process.
 
 ### Interoperability
-This is currently a (very) new and feature-limited programming language, so it is intended to work cohesively with other technologies, libraries, and modules while maintaining a reasonable dependency scope for the language's core features. Eventually, Turquoise will be able to run arbitrary Python code on representations of its data structures and likewise, snippets of Turquoise code will be able to be executed with a Python library. Transpiling (transcompiling) is also being explored as a way to bridge the gap between Turquoise's methodology and Python's massive ecosystem of modules and libraries.
+This is currently a (very) new and feature-limited programming language, so it is intended to work cohesively with other technologies, libraries, and modules while maintaining a reasonable dependency scope for the language's core features. Eventually, Turquoise will be able to run arbitrary [[Python](https://en.wikipedia.org/wiki/Python)](https://en.wikipedia.org/wiki/Python) code on representations of its data structures and likewise, snippets of Turquoise code will be able to be executed with a Python library. [[Transpiling](https://en.wikipedia.org/wiki/Transpiling)](https://en.wikipedia.org/wiki/Transpiling) (transcompiling) is also being explored as a way to bridge the gap between Turquoise's methodology and Python's massive ecosystem of modules and libraries.
 
 ### Intuitiveness
 Everything in the language should, to a reasonable extent, do what you expect it to. When confusion arises, efficient strategies for clarifying the language's behavior will be available.
@@ -38,27 +38,38 @@ Exceptions to rules and principles should be minimized wherever possible in orde
 ## Contributing
 
 Turquoise is not accepting contributions at this time. If there is a feature you want considered for the language, please feel free to open a [new issue](https://github.com/generic-github-user/turquoise/issues/new/choose). Contributions of pull requests and specific functionality may be accepted in the future once the core features of the language have been built out and it is reasonably stable.
+
 ## Imports
-Turquoise is designed to minimize the amount of essential functionality implemented in Python; and thus the number of external libraries included. A few standard modules are used for more convenient implementation of functions that mimic or extend those of Python.
+
+Turquoise is designed to minimize the amount of essential functionality implemented in [Python](https://en.wikipedia.org/wiki/Python); and thus the number of external libraries included. A few standard modules are used for more convenient implementation of functions that mimic or extend those of Python.
+
 ### General
+
 ```python
 import math
 import string
 import operator as ops
 ```
+
 ### Visualization
+
 ```python
 import networkx as nx
 from pyvis.network import Network
 import matplotlib.pyplot as plt
 ```
+
 ### Miscellaneous
+
 ```python
 import uuid
 import itertools
 ```
+
 ## Range
-Describes range expressions in Turquoise; these are similar to the Python version, but allow floating-point numbers for the start, stop, and step parameters. The syntax is `start:stop` or `start:stop:step`; if a step is not specified, the default will be 1.
+
+Describes range expressions in Turquoise; these are similar to the [Python](https://en.wikipedia.org/wiki/Python) version, but allow floating-point numbers for the start, stop, and step parameters. The syntax is `start:stop` or `start:stop:step`; if a step is not specified, the default will be 1.
+
 ```python
 class Range:
     def __init__(self, start, stop=1, step=1):
@@ -78,7 +89,9 @@ class Range:
         self.value = Array(values)
         return self.value
 ```
+
 ## Tetration
+
 ```python
 def tetration(n, m):
     r = n
@@ -92,7 +105,9 @@ tetration.info = "This function handles Turquoise's tetration functionality, whi
 
 tetration(1.6, 6)
 ```
+
 ## Expression
+
 ```python
 class Expression:
     def __init__(self, a=None, b=None, op=None):
@@ -124,7 +139,7 @@ class Expression:
         }
         self.report = ['a', 'op', 'b']
         self.python_ops = {
-            '!': ('math.factorial([](https://en.wikipedia.org/wiki/))', 'math'),
+            '!': ('math.factorial({})', 'math'),
             '^': ('**', None)
         }
         
@@ -146,7 +161,9 @@ e2 = Expression('5', None, '!')
 e3 = Expression('9', '3', '^')
 [e.python() for e in [e1, e2, e3]]
 ```
+
 ## Array
+
 ```python
 class Array:
     def __init__(self, terms=[]):
@@ -204,19 +221,24 @@ class Array:
         items = '['+items+']'
         return items
 ```
+
 ```python
 # a = [3,3,3]
 # b = [4,4,4]
 # a@b
 ```
+
 ```python
 '-6'.isnumeric()
 float('-6')
 ```
+
 ```python
 bool([])
 ```
+
 ## Block
+
 ```python
 class Block:
     def __init__(self, children=None, parsed=None, parser=None, r=None, block_type=None, source=''):
@@ -278,15 +300,15 @@ class Block:
         for c in self.children:
             c.print(level=level+1)
 #         for k, v in vars(self.parser).items():
-#             print('[](https://en.wikipedia.org/wiki/)[](https://en.wikipedia.org/wiki/):[](https://en.wikipedia.org/wiki/)'.format(indent, k, v))
+#             print('{}{}:{}'.format(indent, k, v))
         if self.parsed:
             for k in self.parsed.report:
                 v = getattr(self.parsed, k)
-                print(indent*(level)+'[](https://en.wikipedia.org/wiki/)[](https://en.wikipedia.org/wiki/):[](https://en.wikipedia.org/wiki/)'.format(indent, k, str(v)))
+                print(indent*(level)+'{}{}:{}'.format(indent, k, str(v)))
         if self.report:
             for k in self.report:
                 v = getattr(self, k)
-                print(indent*(level)+'[](https://en.wikipedia.org/wiki/)[](https://en.wikipedia.org/wiki/):[](https://en.wikipedia.org/wiki/)'.format(indent, k, str(v)))
+                print(indent*(level)+'{}{}:{}'.format(indent, k, str(v)))
                 
     def has_tokens(self):
         return any(type(b) is Token for b in self.children)
@@ -300,7 +322,9 @@ class Block:
     def __setitem__(self, i, j):
         self.children[i] = j
 ```
+
 ## Token
+
 ```python
 class Token(Block):
     def __init__(self, string='', token_type=None):
@@ -329,6 +353,7 @@ class Token(Block):
 #         super().print(label='Token', **kwargs)
         return 'Token: '+self.string+': '+self.type
 ```
+
 ```python
 class Number:
     def __init__(self, a):
@@ -337,6 +362,7 @@ class Number:
     def evaluate(self):
         return self.a
 ```
+
 ```python
 class Group:
     def __init__(self, a):
@@ -348,7 +374,9 @@ class Group:
         self.value = self.a
         return self.value
 ```
+
 ## Program
+
 ```python
 class Program:
     def __init__(self, source):
@@ -360,7 +388,7 @@ class Program:
         self.char_sets = {
             'numeric': string.digits + '.-',
             'op': '!@#$%^&*/-+<>=?',
-            'syntax': '()[][](https://en.wikipedia.org/wiki/),;:=|',
+            'syntax': '()[]{},;:=|',
             'letter': string.ascii_lowercase
         }
 #         List of syntactical patterns to match to generate the program's structure
@@ -435,7 +463,7 @@ class Program:
 #         self.graph = nx.DiGraph()
         self.graph = Network(width=800, height=800, notebook=True, directed=True)
 #         Add nodes and edges for each block/relationship in the tree
-        font = ['align': 'middle'](https://en.wikipedia.org/wiki/'align':_'middle')
+        font = {'align': 'middle'}
         self.traverse(self.tree, lambda x: self.graph.add_node(x.id, label=(x.source if len(x.source) < 50 else ' '), font=font, shape='circle'))
         self.traverse(self.tree, lambda x: self.graph.add_edges([(x.id, y.id) for y in x.children]))
 #         Generate and display the visualization
@@ -550,19 +578,19 @@ class Program:
             if block[0].parser in [Expression]:
                 t = block[0].parsed.python()
                 if auto_print:
-                    t = 'print([](https://en.wikipedia.org/wiki/))'.format(t)
+                    t = 'print({})'.format(t)
                 translation.append(t)
             else:
-                translation.append('# Line [](https://en.wikipedia.org/wiki/) could not be converted'.format(i+1))
+                translation.append('# Line {} could not be converted'.format(i+1))
                 successful = False
                 missed += 1
 #         if not successful:
         if missed:
-            translation.insert(0, '\n# [](https://en.wikipedia.org/wiki/) lines could not be converted from Turquoise to Python and should be translated manually.\n'.format(missed))
+            translation.insert(0, '\n# {} lines could not be converted from Turquoise to Python and should be translated manually.\n'.format(missed))
         text = '\n'.join(translation)
         for a, b in self.py_imports:
             if a in text:
-                translation.insert(0, 'import [](https://en.wikipedia.org/wiki/).[](https://en.wikipedia.org/wiki/)'.format(b, a))
+                translation.insert(0, 'import {}.{}'.format(b, a))
         return '\n'.join(translation)
 
                     
@@ -571,8 +599,11 @@ class Program:
         self.tree.print()
     
 ```
+
 ## Testing
+
 ### Automated
+
 ```python
 class Test:
     def __init__(self, test_args):
@@ -591,17 +622,19 @@ class Test:
                 result = ex
             
             if show:
-                print('Test line "[](https://en.wikipedia.org/wiki/)"; result: [](https://en.wikipedia.org/wiki/)'.format(test_string, result))
+                print('Test line "{}"; result: {}'.format(test_string, result))
             self.num += 1
         s, n = self.successful, self.num
-        print('[](https://en.wikipedia.org/wiki/) of [](https://en.wikipedia.org/wiki/) tests ([](https://en.wikipedia.org/wiki/)%) were successful ([](https://en.wikipedia.org/wiki/)/[](https://en.wikipedia.org/wiki/)% failed)'.format(s, n, round(s/n*100, 2), n-s, round((1-s/n)*100, 2)))
+        print('{} of {} tests ({}%) were successful ({}/{}% failed)'.format(s, n, round(s/n*100, 2), n-s, round((1-s/n)*100, 2)))
 
 possible_ops = list('+-/*%^<>:&|') + ['**', '^^', '<=', '>=', '==', '!=', '//']
 g = [0, 0.2, 0.5, 1, 22, 333, -5]
 t = Test([g, possible_ops, g])
 t.run(show=False)
 ```
+
 ### Manual
+
 ```python
 tests = """
 7
@@ -649,26 +682,33 @@ print(M.transpile())
 # M.tree[-1].parser#.components[1].token_type
 # store statement and result for each line (?)
 ```
+
 ```python
 __name__
 ```
+
 ```python
 vars(M.tree.c[5])
 ```
+
 ```python
 [(a.source, a.parser, a.string) for a in M.tree.c[4][0][0]]
 # M.tree[0]
 ```
+
 ```python
 M.tree[2][0].c
 ```
+
 ```python
 list(range(20, 0, -1))
 ```
+
 ```python
 # M.__dict__
 # M.tree[0][1].type
 ```
+
 ```python
 bool([False])
 f = [3, 7, 2, 1, 8]
@@ -676,4 +716,5 @@ f[0:3]
 ```
 
 
-*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 18:02:07*
+
+*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 18:18:52*
