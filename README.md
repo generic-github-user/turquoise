@@ -2,17 +2,17 @@
 
 ## Features
 
-- Infix notation for a variety of [[mathematical operators](https://en.wikipedia.org/wiki/mathematical_operators)](https://en.wikipedia.org/wiki/mathematical_operators)
+- Infix notation for a variety of [mathematical operators](https://en.wikipedia.org/wiki/mathematical_operators)
 - Shorthand functions for common operations and expressions
 - Seamless integration of calculations involving numbers, symbols, strings, booleans, lists, and more
 
 Several tools for debugging and development are also under development or planned:
 
-- [[Transpiling](https://en.wikipedia.org/wiki/Transpiling)](https://en.wikipedia.org/wiki/Transpiling) to clean [[Python](https://en.wikipedia.org/wiki/Python)](https://en.wikipedia.org/wiki/Python) code
-- Interactive visualization of the [[abstract syntax tree](https://en.wikipedia.org/wiki/abstract_syntax_tree)](https://en.wikipedia.org/wiki/abstract_syntax_tree) for use in debugging
+- [Transpiling](https://en.wikipedia.org/wiki/Transpiling) to clean [Python](https://en.wikipedia.org/wiki/Python) code
+- Interactive visualization of the [abstract syntax tree](https://en.wikipedia.org/wiki/abstract_syntax_tree) for use in debugging
 - A linter to standardize code written in Turquoise
 - A profiler to analyze the performance of Turquoise programs
-- Time-complexity and space-complexity analysis of algorithms
+- [Time complexity](https://en.wikipedia.org/wiki/Time_complexity) and [space complexity](https://en.wikipedia.org/wiki/space_complexity) analysis of algorithms
 - An interactive debugger
 
 ## Design Philosophy
@@ -39,4 +39,4 @@ Exceptions to rules and principles should be minimized wherever possible in orde
 
 Turquoise is not accepting contributions at this time. If there is a feature you want considered for the language, please feel free to open a [new issue](https://github.com/generic-github-user/turquoise/issues/new/choose). Contributions of pull requests and specific functionality may be accepted in the future once the core features of the language have been built out and it is reasonably stable.
 
-*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 13:17:46*
+*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 13:26:14*
