@@ -19,3 +19,5 @@ Everything in the language should, to a reasonable extent, do what you expect it
 
 ### Consistency
 Exceptions to rules and principles should be minimized wherever possible in order to make the language's basic concepts universally applicable.
+
+*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 00:53:11*
