@@ -39,4 +39,5 @@ Exceptions to rules and principles should be minimized wherever possible in orde
 
 Turquoise is not accepting contributions at this time. If there is a feature you want considered for the language, please feel free to open a [new issue](https://github.com/generic-github-user/turquoise/issues/new/choose). Contributions of pull requests and specific functionality may be accepted in the future once the core features of the language have been built out and it is reasonably stable.
 
-*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 16:59:15*
+
+*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 18:02:07*
