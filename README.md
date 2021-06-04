@@ -2,11 +2,18 @@
 
 ## Features
 
-- Infix notation for a variety of [mathematical operators](https://en.wikipedia.org/wiki/mathematical_operators)
+- Infix notation for a variety of [[mathematical operators](https://en.wikipedia.org/wiki/mathematical_operators)](https://en.wikipedia.org/wiki/mathematical_operators)
 - Shorthand functions for common operations and expressions
 - Seamless integration of calculations involving numbers, symbols, strings, booleans, lists, and more
-- [Transpiling](https://en.wikipedia.org/wiki/Transpiling) to clean [Python](https://en.wikipedia.org/wiki/Python) code
-- Interactive visualization of the [abstract syntax tree](https://en.wikipedia.org/wiki/abstract_syntax_tree) for use in debugging
+
+Several tools for debugging and development are also under development or planned:
+
+- [[Transpiling](https://en.wikipedia.org/wiki/Transpiling)](https://en.wikipedia.org/wiki/Transpiling) to clean [[Python](https://en.wikipedia.org/wiki/Python)](https://en.wikipedia.org/wiki/Python) code
+- Interactive visualization of the [[abstract syntax tree](https://en.wikipedia.org/wiki/abstract_syntax_tree)](https://en.wikipedia.org/wiki/abstract_syntax_tree) for use in debugging
+- A linter to standardize code written in Turquoise
+- A profiler to analyze the performance of Turquoise programs
+- Time-complexity and space-complexity analysis of algorithms
+- An interactive debugger
 
 ## Design Philosophy
 
@@ -28,4 +35,4 @@ Everything in the language should, to a reasonable extent, do what you expect it
 ### Consistency
 Exceptions to rules and principles should be minimized wherever possible in order to make the language's basic concepts universally applicable.
 
-*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 01:05:59*
+*This document was generated from [`turquoise.ipynb`](https://nbviewer.jupyter.org/github/generic-github-user/turquoise/blob/master/turquoise.ipynb) at 2021-06-04 13:13:31*
